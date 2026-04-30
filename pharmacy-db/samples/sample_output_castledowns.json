@@ -1,0 +1,522 @@
+{
+  "extraction_metadata": {
+    "extractor_version": "0.1.0",
+    "extracted_at": "2026-04-25T11:36:26.506078+00:00",
+    "extraction_method": "pdfplumber_columnar",
+    "validation_status": "passed",
+    "validation_warnings": [],
+    "validation_errors": []
+  },
+  "source_document": {
+    "file_hash": "sha256:deee28748783b60cdb2d66856ed912e5868c6305727c38e030b4032ca63ef102",
+    "file_name": "Mint_Health___Drugs_Castledowns_2641_Report_1.pdf",
+    "file_size_bytes": 103448,
+    "mime_type": "application/pdf",
+    "page_count": 10,
+    "report_generated_at": "2025-08-13T16:21:21"
+  },
+  "regulatory_body": {
+    "name": "Alberta College of Pharmacy",
+    "short_name": "ACP"
+  },
+  "pharmacy": {
+    "name": "Mint Pharmacy: Castle Downs",
+    "license_number": "2641"
+  },
+  "case": {
+    "case_number": "PP0002582",
+    "case_type": "Routine",
+    "case_state": "Work in Progress",
+    "case_closed_date": null,
+    "licensee": {
+      "name": "Ahmed Jomha",
+      "email": "ajjomha@shaw.ca"
+    },
+    "consultant": {
+      "name": "Andrew Fuller",
+      "email": "andrew.fuller@abpharmacy.ca",
+      "role": "Pharmacy Practice Consultant"
+    },
+    "consultant_assignment_status": "confirmed"
+  },
+  "assessments": [
+    {
+      "ordinal": 1,
+      "assessment_date": "2025-03-28",
+      "findings": [
+        {
+          "ordinal": 1,
+          "identified_date": "2025-03-28",
+          "due_date": "2025-04-27",
+          "completed_date": "2025-04-07",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Operations : Continuous Quality Improvement",
+            "parent": "Operations",
+            "child": "Continuous Quality Improvement"
+          },
+          "description_verbatim": "As per Standard 6.5 of the SOLP, a licensee must, at least every three months, work collaboratively with regulated members and unregulated employees to review relevant sources of practice incident information that may complement the pharmacy’s continuous quality improvement processes; and review the practice incident and close call documentation for the licensed pharmacy. As confirmed today, continue to review practice incident documentation at least quarterly to evaluate whether practice changes or preventive measures are required to prevent future drug errors, and to assess whether any changes implemented because of a practice incident were successful in advancing patient safety. For more information on continuous quality improvement and the requirements as per our Standards, review Domain 6 of the SOLP. In addition, the following links speak to the CQI+ launch and the location of the appropriate templates. https://abpharmacy.ca/news/acp-launches-cqi/ https://abpharmacy.ca/regulated-members/practice-resources/quality-assurance-and- improvement/drug-error-management/ https://abpharmacy.ca/wp-content/uploads/Standards_SOLP_New.pdf",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "Standard 6.5 of the SOLP",
+              "standard_code": "6.5",
+              "document": "SOLP"
+            }
+          ],
+          "referenced_urls": [
+            "https://abpharmacy.ca/news/acp-launches-cqi/",
+            "https://abpharmacy.ca/regulated-members/practice-resources/quality-assurance-and-",
+            "https://abpharmacy.ca/wp-content/uploads/Standards_SOLP_New.pdf"
+          ],
+          "source_page_numbers": [
+            1
+          ]
+        },
+        {
+          "ordinal": 2,
+          "identified_date": "2025-03-28",
+          "due_date": "2025-04-27",
+          "completed_date": "2025-04-02",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Operations : Staffing and Conflict of Interest",
+            "parent": "Operations",
+            "child": "Staffing and Conflict of Interest"
+          },
+          "description_verbatim": "As per Standards for the Operation of Licensed Pharmacies (Standard 3.3 and 3.4), all employees working in the licensed pharmacy must have a name tag that clearly identifies their name and role in the pharmacy. Ali's 'name tag' was a sticker ;) In the next 30 days, ensure that all staff members have a name tag with their position/role indicated. Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            2
+          ]
+        },
+        {
+          "ordinal": 3,
+          "identified_date": "2025-03-28",
+          "due_date": "2025-04-27",
+          "completed_date": "2025-04-19",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Pharmacy Practice : Competence & Evidence-Informed Practice",
+            "parent": "Pharmacy Practice",
+            "child": "Competence & Evidence-Informed Practice"
+          },
+          "description_verbatim": "Today we discussed the importance of applying an 'evidence-informed' practice and providing patient care. Historically, pharmacists utilized evidence-based resources/guidelines/etc. as the sole means to establish patient care decisions; however, pharmacists must explore other factors that could influence patient outcomes. As per Standard 4.2.1 of the SPPPT, a regulated member must: a.) make care decisions based on an evidence-informed process that includes i. evidence-based information; ii. professional judgement; and iii. patient choices, values, and circumstances; b) critically evaluate information to determine its validity, importance, and relevance; and c) apply evidence-based information to each patient’s unique needs and goals. Starting with your next patient care intervention, consider how you will incorporate an approach that will support a patients unique needs, goals, and expectations. https://abpharmacy.ca/wp-content/uploads/Standards_SPPPT_New.pdf Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "Standard 4.2.1 of the SPPPT",
+              "standard_code": "4.2.1",
+              "document": "SPPPT"
+            }
+          ],
+          "referenced_urls": [
+            "https://abpharmacy.ca/wp-content/uploads/Standards_SPPPT_New.pdf"
+          ],
+          "source_page_numbers": [
+            2
+          ]
+        },
+        {
+          "ordinal": 4,
+          "identified_date": "2025-03-28",
+          "due_date": "2025-04-27",
+          "completed_date": "2025-04-14",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Operations : Injections",
+            "parent": "Operations",
+            "child": "Injections"
+          },
+          "description_verbatim": "We discussed the epinephrine dosing recommended by Health Canada. Your pharmacy currently does not have the appropriate supply to provide epinephrine treatment for all your patients. Note that the recommended epinephrine dose for individuals older than 12 years/weighing 46kg or more is 0.5mg. If using epinephrine ampoules, ensure you have filter needles. In the next 30 days, review the Health Canada documents below and ensure that your anaphylaxis kit is prepared with the appropriate drugs and equipment. https://www.canada.ca/en/public-health/services/publications/vaccines-immunization/dosage- intramuscular-epinephrine-solution-age-weight.html https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian- immunization-guide-part-2-vaccine-safety/page-4-early-vaccine-reactions-including- anaphylaxis.html#a7 HAZARDOUS DRUGS Review the following resources regarding the handling and administration recommendations for hazardous drugs in the pharmacy (i.e., Testosterone, Depo-Provera, Methotrexate, etc.): 1.) National Institute for Occupational Safety and Health (NIOSH) List of Hazardous Medications https://www.cdc.gov/niosh/docs/2025-103/pdfs/2025-103.pdf?id=10.26616/NIOSHPUB2025103 Table of Control Approaches for Safer Handling of Hazardous Drugs, by Activity and Formulation (Page 30) https://www.cdc.gov/niosh/docs/2023-130/2023-130.pdf?id=10.26616/NIOSHPUB2023130 2.) Alberta College of Pharmacy Guidelines on Injection Safety. Refer to Section 6 for specific guidance for hazardous drugs. https://abpharmacy.ca/wp-content/uploads/Guidelines_InjectionSafety.pdf In the next 30 days reflect on this information and consider if any changes are required for your own policies and practices moving forward. Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [
+            "https://www.canada.ca/en/public-health/services/publications/vaccines-immunization/dosage-",
+            "https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian-",
+            "https://www.cdc.gov/niosh/docs/2025-103/pdfs/2025-103.pdf?id=10.26616/NIOSHPUB2025103",
+            "https://www.cdc.gov/niosh/docs/2023-130/2023-130.pdf?id=10.26616/NIOSHPUB2023130",
+            "https://abpharmacy.ca/wp-content/uploads/Guidelines_InjectionSafety.pdf"
+          ],
+          "source_page_numbers": [
+            2,
+            3
+          ]
+        },
+        {
+          "ordinal": 5,
+          "identified_date": "2025-03-28",
+          "due_date": "2025-04-27",
+          "completed_date": "2025-04-07",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Operations : Integrity and Safety of Drugs",
+            "parent": "Operations",
+            "child": "Integrity and Safety of Drugs"
+          },
+          "description_verbatim": "Within the next 30 days, develop a system to destroy any expired or un-serviceable narcotic and controlled drug stock using an appropriate method and retain a record of all completed documentation. Until such products are denatured on-site, ensure they are stored separately from other narcotics within your time-delayed safe. The documentation of destruction should include the method of destruction, medication information (DIN, lot, expiry if applicable), quantity, date, and regulated personnel involved in the destruction. Ensure you incorporation narcotic destruction within your pharmacy's policy and procedure manual. The websites below are good resources to refer to. https://abpharmacy.ca/news/new-guidance-collecting-and-destructing-outdated-or-unusable- narcotics-and-controlled/ https://abpharmacy.ca/wp-content/uploads/Guidance_Destruction.pdf https://www.canada.ca/en/health-canada/services/health-concerns/controlled-substances- precursor-chemicals/controlled-substances/compliance-monitoring/compliance-monitoring- controlled-substances/unserviceable-stock.html",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [
+            "https://abpharmacy.ca/news/new-guidance-collecting-and-destructing-outdated-or-unusable-",
+            "https://abpharmacy.ca/wp-content/uploads/Guidance_Destruction.pdf",
+            "https://www.canada.ca/en/health-canada/services/health-concerns/controlled-substances-"
+          ],
+          "source_page_numbers": [
+            3
+          ]
+        },
+        {
+          "ordinal": 6,
+          "identified_date": "2025-03-28",
+          "due_date": "2025-04-27",
+          "completed_date": "2025-04-14",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Operations : Training",
+            "parent": "Operations",
+            "child": "Training"
+          },
+          "description_verbatim": "We discussed your current policies and procedures (P&P) manual which your recently updated in January 2025. Upon review, it does not fully reflect your practice. I noticed discrepancies with outdated information and operational components that may not be applicable to your pharmacy. In addition, your P&P is drafted based on the previous Standards of practice which were updated as of February 1, 2025. The following is required, at minimum: - Update your non-sterile compounding (NSC) practices. You will no longer perform NSC and you partner with other pharmacies for your NSC products. Also, include how to order compounds from Stratica and Crestwood. - Update the language for Opioid Agonist Therapy (OAT), as it is currently reflects the Opioid Dependency Program. The OAT guidelines were updated in 2020. If you are not going to perform opioid agonist therapy services, then indicate within your manual. It may be a good practice to also include a list of pharmacies in the area that could perform OAT. - Update your policy related to the delivery of medications and reference the Standards that must be fulfilled (Standard 4.5.1 of the SOLP) - Update all references to the previous Standards of practice. - Confirm that hyperlinks embedded in your manual are still applicable and/or exist. - What is the process/procedure for narcotic management (i.e., inventory and destruction). - How does your pharmacy apply the Standards of Practice for Virtual Care - Equity, diversity, inclusion, accessibility, cultural sensitivity, etc. Over the next 60 days, review your P&P manual and update, where applicable to reflect your current practice and the new Standards. We will review these updates at my next visit. To support you on this, refer the the ACP P&P template at the website below and cross-reference to ensure you have all topics/aspects covered. https://abpharmacy.ca/regulated-members/licensure/licensees-and-proprietors/licensee- resources/ Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "Standard 4.5.1 of the SOLP",
+              "standard_code": "4.5.1",
+              "document": "SOLP"
+            }
+          ],
+          "referenced_urls": [
+            "https://abpharmacy.ca/regulated-members/licensure/licensees-and-proprietors/licensee-"
+          ],
+          "source_page_numbers": [
+            4
+          ]
+        },
+        {
+          "ordinal": 7,
+          "identified_date": "2025-03-28",
+          "due_date": "2025-04-27",
+          "completed_date": "2025-04-07",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Pharmacy Practice : Monitoring and Follow- up",
+            "parent": "Pharmacy Practice",
+            "child": "Monitoring and Follow- up"
+          },
+          "description_verbatim": "Ensure you establish and document a comprehensive follow-up/monitoring plan when providing \"patient/person-center care\". Standard 7.9.1 of the SPPPT outlines the requirements of regulated members when developing a monitoring and follow-up plan. When developing a monitoring and follow-up plan, consider the following: WHO – is responsible for the follow-up? (i.e., which pharmacist will follow-up) WHAT – specific parameters will be discussed (i.e., efficacy, safety, adherence, rationale, etc.) WHEN – will the follow-up take place? (i.e., within a few days, next month, next refill, etc.) For example: RPh to call patient in 7 days to confirm if dizziness has reduced with the dose reduction of ramipril. Your documentation for the monitoring and follow-up plan should include the WHO, WHAT, and WHEN as we discussed. Starting with your next care activity, ensure you have reviewed Standard 7.9 and are developing a monitoring and follow-up plan to support your processes in providing patient care.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "Standard 7.9.1 of the SPPPT",
+              "standard_code": "7.9.1",
+              "document": "SPPPT"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "ordinal": 8,
+          "identified_date": "2025-03-28",
+          "due_date": "2025-04-27",
+          "completed_date": "2025-04-14",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Pharmacy Practice : Collaboration",
+            "parent": "Pharmacy Practice",
+            "child": "Collaboration"
+          },
+          "description_verbatim": "We discussed the requirement of documenting the rationale utilized to support your clinical decision or plan when you are providing patient care. What information did you collect that supported your assessment? Why did you choose to prescribe drug X over drug Y? What clinical practice guideline did you reference? As per Standard 3.3.2(c), of the SPPPT, a pharmacist must when adapting, prescribing in emergency, prescribing at initial access, or managing ongoing therapy of a Schedule 1 drug, communicate the following information as soon as reasonably possible with any regulated health professionals whose care of a patient may be affected by their prescribing decision: i. the type and amount of the drug prescribed, ii. the rationale for prescribing the drug, iii. the date the drug was prescribed, iv. any non-pharmaceutical recommendations associated with the prescription, v. the monitoring plan for the patient, and vi. any instructions given to the patient.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            5
+          ]
+        },
+        {
+          "ordinal": 9,
+          "identified_date": "2025-03-28",
+          "due_date": "2025-04-27",
+          "completed_date": "2025-04-07",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Pharmacy Practice : Evaluate Information",
+            "parent": "Pharmacy Practice",
+            "child": "Evaluate Information"
+          },
+          "description_verbatim": "As discussed, pharmacists must collect information and identify treatment options that are indicated, likely to be effective, safe, and something the patient is willing and able to adhere to (aka IESA). Upon review of the cases presented today, there was inconsistency with the confirmation of IESA prior to preforming a restricted activity. It is required that sufficient information is collected from a patient to support patient care and that the information is documented in the patient record. As per Standard 7.4 of the SPPPT, a pharmacist meets patients' health needs and goals by developing plans for patient care, which includes collecting information and identifying treatment options by applying IESA, as reflected within Standards 7.4.1(a) and 7.4.1(b). Below is an example documentation note that demonstrates the appropriate collection of information: D: Pt presents to the pharmacy requesting a refill of Synthroid 50ug once daily for Hypothyroidism (INDICATION). No refills remain on file. Pt is unable to see GP for a new Rx until next month. Pt reports no signs/symptoms of hyper/hypothyroidism or ADR, such as any changes in weight, sleep, energy level, etc. (EFFICACY/SAFETY). As per Netcare, TSH was 2.78 in December 2024 - target of 0.2 - 4.00 as per CPS (EFFICACY). Pt takes medication each morning 30 mins before breakfast and does not miss any doses. A: No concerns noted with current therapy and it is appropriate to continue. Pharmacist to adapt current prescription to support continuity of care. P: RPh to prescribe Synthroid 50ug once daily for 30 days. RPh to contact patient in 30 days to assess efficacy/safety (as noted above). Starting with your next care activity, ensure you have reviewed Standard 7.4 and are collecting IESA to support your processes in providing patient care.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "Standard 7.4 of the SPPPT",
+              "standard_code": "7.4",
+              "document": "SPPPT"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "ordinal": 10,
+          "identified_date": "2025-03-28",
+          "due_date": "2025-04-27",
+          "completed_date": "2025-04-07",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Pharmacy Practice : Collect Appropriate Information",
+            "parent": "Pharmacy Practice",
+            "child": "Collect Appropriate Information"
+          },
+          "description_verbatim": "When assessing a medication therapy, utilize the SCHOLAR acronym to assist in collecting information that will be used to support the assessment and to assist in your documentation practices. This acronym can be used in many situations, such as confirming appropriateness of antibiotic, when completing an opioid assessment, or for an OTC consult. Here is an example of how SCHOLAR was used for a UTI. S - Symptoms (e.g. pain during urination, lower back pain, blood in urine, etc.). C - Characteristics (e.g. burning pain, stabbing pain, numb pain, etc.) H- History (have they had a UTI in past? Recent infection? Did previous antibiotic treatment work, etc.) O - Onset (When did the UTI start?) L - Location (Where is the pain located? Lower back, kidney area, etc.) A - Aggravating factors (What makes the symptoms worse?) R - Remitting factors (What makes the symptoms better? What antibiotics were used previously that worked?) This will assist a pharmacist in collecting relevant information that will be used to support a prescribing decision, recommendations, follow-up/monitoring plan, etc. As per Standard 7.3 of the SPPPT, a regulated member informs patient care by collecting all APPROPRIATE INFORMATION pertaining to each patient’s healthcare history and current signs, symptoms, and stated health concerns. https://abpharmacy.ca/wp-content/uploads/Standards_SPPPT_New.pdf",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "Standard 7.3 of the SPPPT",
+              "standard_code": "7.3",
+              "document": "SPPPT"
+            }
+          ],
+          "referenced_urls": [
+            "https://abpharmacy.ca/wp-content/uploads/Standards_SPPPT_New.pdf"
+          ],
+          "source_page_numbers": [
+            6
+          ]
+        },
+        {
+          "ordinal": 11,
+          "identified_date": "2025-03-28",
+          "due_date": "2025-04-27",
+          "completed_date": "2025-04-19",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Operations : Facilities",
+            "parent": "Operations",
+            "child": "Facilities"
+          },
+          "description_verbatim": "As per Standard 3.6 of the SOLP, a licensee protects patient confidentiality and privacy by ensuring an appropriate space exists within the patient services area for regulated members and other regulated health professionals who are part of the pharmacy team to interact with patients. You have already began work exploring options to resolve this deficiency by introducing a private consultation area by the front entrance. As noted, the requirement of a private consultation area within a community practice is June 1, 2025. https://abpharmacy.ca/news/deadline-approaching-for-private-counselling-room-and-sink- requirements/ At my next visit, we can discuss the status of your renovation. More information regarding renovations can be found below. https://abpharmacy.ca/regulated-members/licensure/managing-my-pharmacy/renovation/",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "Standard 3.6 of the SOLP",
+              "standard_code": "3.6",
+              "document": "SOLP"
+            }
+          ],
+          "referenced_urls": [
+            "https://abpharmacy.ca/news/deadline-approaching-for-private-counselling-room-and-sink-",
+            "https://abpharmacy.ca/regulated-members/licensure/managing-my-pharmacy/renovation/"
+          ],
+          "source_page_numbers": [
+            7
+          ]
+        },
+        {
+          "ordinal": 12,
+          "identified_date": "2025-03-28",
+          "due_date": "2025-04-27",
+          "completed_date": "2025-04-19",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Operations : Compounding Services",
+            "parent": "Operations",
+            "child": "Compounding Services"
+          },
+          "description_verbatim": "As per Standard 4.8.1 of the SOLP, a licensee must provide a patient access to compounding services a) by directly compounding preparations in the licensed pharmacy in accordance with standards approved by the college respecting the compounding of sterile and non-sterile preparations; or b) through an agreement with a pharmacy issued a compounding and repackaging licence that is in a form that meets the requirements of the Pharmacy and Drug Regulation As confirmed today, your pharmacy does not prepare non-sterile compounds and utilizes pharmacies with compounding and repackaging licenses to provide you the compounded preparations for your patients. As a pharmacy that does not directly compound preparations on site you must complete the 'declaration on compounding services' document and submit to pharmacy@abpharmacy.ca. Completing the required declaration will apply a condition on pharmacy License not permitting your pharmacy to directly compound preparations onsite. https://abpharmacy.ca/wp-content/uploads/Licensure_DeclarationCompoundingServices.pdf",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "Standard 4.8.1 of the SOLP",
+              "standard_code": "4.8.1",
+              "document": "SOLP"
+            }
+          ],
+          "referenced_urls": [
+            "https://abpharmacy.ca/wp-content/uploads/Licensure_DeclarationCompoundingServices.pdf"
+          ],
+          "source_page_numbers": [
+            7
+          ]
+        },
+        {
+          "ordinal": 13,
+          "identified_date": "2025-03-28",
+          "due_date": "2025-04-27",
+          "completed_date": "2025-04-19",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Operations : Integrity and Safety of Drugs",
+            "parent": "Operations",
+            "child": "Integrity and Safety of Drugs"
+          },
+          "description_verbatim": "As per Standard 4.4.1(b) of the SOLP, a licensee must ensure adequate procedures are in place to identify theft, loss, or diversion of controlled substances, including i. maintaining a perpetual inventory of each controlled substance in stock; ii. a documented audit of the perpetual inventories to verify accuracy A. at least every three months, and B. each time there is a change in proprietor or licensee; iii. investigating, resolving, and documenting any discrepancies identified; iv. evaluating whether procedure changes or preventative measures are required to prevent future discrepancies; and v. reporting any loss or theft of controlled substances to Health Canada within 10 days of discovery. Your current process consists of counting all narcotic and controlled substances monthly, and if a particular medication was not dispensed since the last count, staff do not count the product and refer to the quantity from the last month. As noted in the Standard above, you need to demonstrate that the perpetual inventory of every medication is being completed every three months. I expressed concern that your current process may not fulfill the Standard, so I will ask that you consider how to ensure that every drug is counted quarterly, especially if you did not dispense a particularly drug for greater than three months. We can discuss at my next visit. Continue to document the personnel completing the narcotic count and the date the count was completed. If there are discrepancies, explore where they may have occurred and report any unexplained loss or theft of narcotic or controlled drugs to Health Canada within 10 days of discovery. This process is now completed electronically, which you register for within Health Canada's website. Of note, you must keep all records on-site for two years if they contain information which must be retained under the relevant regulations. https://abpharmacy.ca/articles/managing-your-controlled-substances https://www.canada.ca/en/health-canada/services/health-concerns/controlled-substances- precursor-chemicals/controlled-substances/compliance-monitoring/loss-theft.html https://www.canada.ca/en/health-canada/services/publications/healthy-living/loss-theft- controlled-substances-precursors/reporting-guideline-process.html#a34 https://abpharmacy.ca/wp-content/uploads/Standards_SOLP_New.pdf Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "Standard 4.4.1(b) of the SOLP",
+              "standard_code": "4.4.1(b)",
+              "document": "SOLP"
+            }
+          ],
+          "referenced_urls": [
+            "https://abpharmacy.ca/articles/managing-your-controlled-substances",
+            "https://www.canada.ca/en/health-canada/services/health-concerns/controlled-substances-",
+            "https://www.canada.ca/en/health-canada/services/publications/healthy-living/loss-theft-",
+            "https://abpharmacy.ca/wp-content/uploads/Standards_SOLP_New.pdf"
+          ],
+          "source_page_numbers": [
+            7,
+            8
+          ]
+        },
+        {
+          "ordinal": 14,
+          "identified_date": "2025-03-28",
+          "due_date": "2025-04-27",
+          "completed_date": "2025-04-19",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Pharmacy Practice : Evaluate Information",
+            "parent": "Pharmacy Practice",
+            "child": "Evaluate Information"
+          },
+          "description_verbatim": "The majority of our patients are actively experiencing a drug therapy problem (DTP). A pharmacist will discover As per Standard 7.4.1(c) and (d) of the SPPPT, a pharmacist must consider if there is an actual or potential DTP and the actions that must be taken to address/resolve. In addition, Appendix C of the SPPPT provides more information regarding DTP. The majority of our patients are actively experiencing a drug therapy problem (DTP). A pharmacist will discover these DTPs and respond accordingly if they assess the following: - confirming the indication of any scheduled or unscheduled drugs used by the patient. - assessing the effectiveness of the drugs used by the patient (e.g. BP readings, TSH values, hours of sleep, frequency of PRN use, etc.). - reviewing the common adverse drug reactions of the drugs used by the patient. - assessing the adherence to the drugs used by the patient (e.g. are they taking the medication as prescribed? Are they missing or forgetting to take their medication?). - reviewing Alberta Netcare (e.g. laboratory values, dispensing history, previous antibiotic use, opioid dispensing history, hospital discharge reports, etc.). - establishing an appropriate and specific follow-up/monitoring plan (e.g. when will you follow-up to confirm that the medication resolved the infection or to confirm that they are not experiencing an adverse drug reaction?). By confirming IESA, reviewing Alberta Netcare, and establishing a monitoring plan, you will have the ability to assess DTP risk or if a DTP is actively present. To support you confirming DTPs, refer to the \"Vital to Patient Care\" ACP tool (shown below). https://abpharmacy.ca/wp-content/uploads/CCC_VitaltoPatientCare.pdf",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [
+            "https://abpharmacy.ca/wp-content/uploads/CCC_VitaltoPatientCare.pdf"
+          ],
+          "source_page_numbers": [
+            8,
+            9
+          ]
+        },
+        {
+          "ordinal": 15,
+          "identified_date": "2025-03-28",
+          "due_date": "2025-04-27",
+          "completed_date": "2025-04-07",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Operations : Facilities",
+            "parent": "Operations",
+            "child": "Facilities"
+          },
+          "description_verbatim": "As you informed me, you do not have a particular website for your pharmacy, but the medical clinic that you share a premise with lists your pharmacy within their overall website. As noted, this website has not been updated since 2018. Any online platforms, including websites or social media applications, that promote a pharmacy operation, must fulfill the requirements as per the Pharmacy and Drug Regulation (Section 23) noted below. Couple options to resolve this deficiency. 1.) Have the medical clinic remove your pharmacy from their website. 2.) Have the medical clinic update their website to include the requirements below, and ensure that it is updated annually with your new Pharmacy License. Pharmacy and Drug Regulation Section 23: • A copy of the pharmacy licence. • The location, mailing address, e-mail address and telephone number of the licensed pharmacy. • The name, pharmacist practice permit number, and business address of the licensee. • The following statement: The licensee is required to provide, on the request of a patient, the name and practice permit number of any regulated member who provides a pharmacy service to the patient or who engages in the practice of pharmacy with respect to a patient.\" • The name and business address of the proprietor. • If the proprietor is a corporation, the name of the proprietor's representative. • A copy or a link to the Patient Concerns Poster At my next visit, we can discuss the direction you took.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "assessment_date": "2025-05-20",
+      "findings": [
+        {
+          "ordinal": 1,
+          "identified_date": "2025-05-20",
+          "due_date": "2025-06-19",
+          "completed_date": "2025-07-11",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Operations : Facilities",
+            "parent": "Operations",
+            "child": "Facilities"
+          },
+          "description_verbatim": "Today you provided me an update on a few items: - You have recently sold your community pharmacy practice, with new proprietors in place starting July 1, 2025. - Renovation plans for establishing a private consultation area, as addressed during my first visit, is currently on pause as per request of the new proprietors who will want to establish their plans themselves. - You showed me updates to your policy and procedure manual. Since a new proprietor will be in place prior to my third visit, we agreed that you would confirm the plan with your pharmacy's policies and procedures. Will you maintain your current manual or will you introduce the new proprietor's organizational manual? If you will be utilizing your current manual, further updates are required which we will review in more detail at my next visit. If using the new proprietor's organizational policies, we will need to review to confirm that it aligns with your pharmacy practice. We will discuss further at my next visit.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            9,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "assessment_date": "2025-07-11",
+      "findings": [
+        {
+          "ordinal": 1,
+          "identified_date": "2025-07-11",
+          "due_date": "2025-08-10",
+          "completed_date": "2025-07-11",
+          "state": "Closed",
+          "person_responsible": "Ahmed Jomha",
+          "category": {
+            "raw": "Operations : Facilities",
+            "parent": "Operations",
+            "child": "Facilities"
+          },
+          "description_verbatim": "During my visit today, you provide me more details of the transition of the ownership of the pharmacy to Mint Health. Currently, there is not specific timeline when the required renovations will be explored by the new ownership group to address the lack of a private consultation area, which was first discussed at the end of March 2025. To address the deficiency of not having a private consultation area, which is required per Standard 3.6 of the SOLP, it is an expectation that a renovation application will be submitted to ACP prior to August 15, 2025. Failure to reach this timeline will lead to a 4th visit and a re-inspection fee of $912. In addition, since the name of the pharmacy has changed, all signage associated to the previous pharmacy name needs to be replaced to avoid any confusion with the public as indicated within Standard 3.8 of the SOLP and Section 24(1) of the Pharmacy and Drug Regulation. Please keep me posted on how things proceed.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "Standard 3.6 of the SOLP",
+              "standard_code": "3.6",
+              "document": "SOLP"
+            },
+            {
+              "raw_text": "Standard 3.8 of the SOLP",
+              "standard_code": "3.8",
+              "document": "SOLP"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            10
+          ]
+        }
+      ]
+    }
+  ]
+}
