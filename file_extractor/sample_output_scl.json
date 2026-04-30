@@ -1,0 +1,1035 @@
+{
+  "extraction_metadata": {
+    "extractor_version": "0.1.0",
+    "extracted_at": "2026-04-25T11:36:30.399329+00:00",
+    "extraction_method": "pdfplumber_columnar",
+    "validation_status": "passed_with_warnings",
+    "validation_warnings": [
+      "pharmacy name missing — will require supervisor assignment",
+      "pharmacy license number missing",
+      "licensee name missing",
+      "consultant name missing — will require supervisor assignment"
+    ],
+    "validation_errors": []
+  },
+  "source_document": {
+    "file_hash": "sha256:3a4272095dccda2f7d83b3020e52eecde1606e1186bbd9af8ffda13a6e80a49a",
+    "file_name": "ACP_findings_SCL_2024_Summary_Galvin.pdf",
+    "file_size_bytes": 133170,
+    "mime_type": "application/pdf",
+    "page_count": 14,
+    "report_generated_at": "2026-01-27T11:10:04"
+  },
+  "regulatory_body": {
+    "name": "Alberta College of Pharmacy",
+    "short_name": "ACP"
+  },
+  "pharmacy": {
+    "name": null,
+    "license_number": null
+  },
+  "case": {
+    "case_number": "PP0001972",
+    "case_type": "Sterile compounding",
+    "case_state": null,
+    "case_closed_date": null,
+    "licensee": {
+      "name": null,
+      "email": null
+    },
+    "consultant": {
+      "name": null,
+      "email": null,
+      "role": null
+    },
+    "consultant_assignment_status": "unknown"
+  },
+  "assessments": [
+    {
+      "ordinal": 1,
+      "assessment_date": "2024-06-13",
+      "findings": [
+        {
+          "ordinal": 1,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-07-17",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Personnel : Training & Assessment",
+            "parent": "Sterile - Personnel",
+            "child": "Training & Assessment"
+          },
+          "description_verbatim": "Upon review of your training and competency assessment programs, there was no record of an initial training and assessment program for cleaning and disinfecting personnel (i.e., your current pharmacy technicians). As per NAPRA 5.1.2.2 and 5.1.2.3, there must be established programs that includes theoretical and practical training and assessment for cleaning practices in a sterile compounding environment. Within the next 30 days, develop a training and competency assessment program. Once completed, immediately implement, and complete the initial theoretical and practical training and assessment. Ensure this training program is completed annually. Within the next 30 days, please upload a record of completion within the ShareFile.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 5.1.2.2",
+              "standard_code": "5.1.2.2",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            1
+          ]
+        },
+        {
+          "ordinal": 2,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-07-17",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - CSP Protocols : Documentation Review",
+            "parent": "Sterile - CSP Protocols",
+            "child": "Documentation Review"
+          },
+          "description_verbatim": "We reviewed several Master Formulation Records (MFR)/Compounding Protocols (CP) that are currently utilized and confirmed the following was missing: • Documentation of the MFR/CP protocol number and current active version. • Confirmation that a pharmacist reviewed and authorized the use of the active and previous MFR/CP. • The list of devices, instruments, and materials (i.e., equipment) required to compound the sterile preparation. NAPRA 6.2 and Appendix 7 provides more information of the requirements of MFR/CPs. Within the next 30 days, update all MFRs/compounding protocols to be reflective of the required components. Please upload one updated MFR/CP into the ShareFile. Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 6.2",
+              "standard_code": "6.2",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            1,
+            2
+          ]
+        },
+        {
+          "ordinal": 3,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Preparation Requirements : Receipt, Transport and Delivery",
+            "parent": "Sterile - Preparation Requirements",
+            "child": "Receipt, Transport and Delivery"
+          },
+          "description_verbatim": "During our discussion of the delivery processes of hazardous medications, it was confirmed that there is no labeling affixed to outside of the packaging container to inform those who are handling the delivery and receipt of said container, that it contains a hazardous medication. As per NAPRA 6.9, hazardous compounded sterile preparations must be transported in rigid containers marked “Cytotoxic” and designed to minimize the risk of cracking or failure of the preparation containers. Starting immediately, update your packaging and delivery procedures to reflect this standard.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 6.9",
+              "standard_code": "6.9",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            2
+          ]
+        },
+        {
+          "ordinal": 4,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Preparation Requirements : Sterility Tests",
+            "parent": "Sterile - Preparation Requirements",
+            "child": "Sterility Tests"
+          },
+          "description_verbatim": "As outlined from the visit in January 2024, method suitability results meeting the requirement of USP <71> are mandatory for all sterile preparations that have extended BUDs. It was requested at that time, that the microbiologist involved in sterility testing provide a summary report with each sterile preparation tested that would include the following: • The details of the method suitability procedures • What challenge organisms were tested. • Was anerobic bacterium tested. • What the sterility test method is that was qualified. Please follow up with your microbiologist to ensure all of the above points are included in the sterility testing result, and ensure this documentation is retained with the compounding record.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            2
+          ]
+        },
+        {
+          "ordinal": 5,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Preparation Requirements : Receipt, Transport and Delivery",
+            "parent": "Sterile - Preparation Requirements",
+            "child": "Receipt, Transport and Delivery"
+          },
+          "description_verbatim": "As per NAPRA 6.9, the sterile compounding supervisor must ensure that personnel involved in preparation and delivery of products (pharmacist, pharmacy technician, pharmacy assistant and driver) receive training on the transport and delivery procedures, including the procedure for dealing with accidental exposure or spills. It was not evident that a policy and procedure is developed to support the appropriate training and assessment of pharmacy staff involved in the transport and delivery processes, particularly how to handle accidental exposure or spill of a hazardous product. In addition, handling spills is not incorporated within the personnel training assessment document. Within the next 30 days, develop and implement a policy and procedure that addresses this deficiency. Please upload this document into the ShareFile when completed.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 6.9",
+              "standard_code": "6.9",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            2
+          ]
+        },
+        {
+          "ordinal": 6,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Facilities & Equipment : Cleaning, Calibrating, & Maintanence",
+            "parent": "Sterile - Facilities & Equipment",
+            "child": "Cleaning, Calibrating, & Maintanence"
+          },
+          "description_verbatim": "As per NAPRA 5.3.3.2, the incubator must be calibrated and maintained as per manufacturers recommendation, and when in operation, the temperature must be read and recorded daily in the general maintenance log. You were able to confirm that the temperature of the incubator is recorded daily, when in use, by the compounding supervisor. The incubator is being calibrated annually; however, there is no documented record of the incubator temperature at time of calibration. Currently, staff are only ‘checking off’ that the incubator attains and maintains temperatures of 32.5 +/- 2.5 or 22.5 +/-2.5. It is not clear what the procedure is to ensure that the incubator attains and maintains these temperatures, nor what the actual temperatures were during calibration to confirm that no action was required. Within the next 30 days, develop a policy and procedure that defines incubator calibration and update the template utilized to support appropriate documentation. Please upload this policy and procedure within the ShareFile when completed.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 5.3.3.2",
+              "standard_code": "5.3.3.2",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            3
+          ]
+        },
+        {
+          "ordinal": 7,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Personnel : Roles & Responsibilities",
+            "parent": "Sterile - Personnel",
+            "child": "Roles & Responsibilities"
+          },
+          "description_verbatim": "As per myACP, your pharmacy profile does not include all regulated staff members that are currently employed at Strathcona Compounding Ltd. Within the next 30 days, review your employment list and update myACP accordingly. Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            3
+          ]
+        },
+        {
+          "ordinal": 8,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Quality Assurance Program : Verification of Equipment & Facilities",
+            "parent": "Sterile - Quality Assurance Program",
+            "child": "Verification of Equipment & Facilities"
+          },
+          "description_verbatim": "As per NAPRA 5.3.3.2, controlled freezing temperature for a biomedical-grade freezer must be within -25 to -10°C. Upon review of your May 2024 freezer log, the maximum temperature was above -10 the entire month, including a temperature of -0.7°C on May 6. No action was taken with these elevated temperatures, even though your freezer log clearly states what the required NAPRA temperature range should be. If sterile products are actively stored within this freezer, how are you confirming that they are appropriate for use/dispensing? You indicated that older thermometers are considered a factor for the elevated temperatures and that new thermometers have been purchased and are in use. If temperatures continue to remain outside of the required temperature range, action will be required including recertification/ calibration of your freezer. Please upload your freezer temperature logs from June into the ShareFile.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 5.3.3.2",
+              "standard_code": "5.3.3.2",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            3
+          ]
+        },
+        {
+          "ordinal": 9,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Quality Assurance Program : Verification of Equipment & Facilities",
+            "parent": "Sterile - Quality Assurance Program",
+            "child": "Verification of Equipment & Facilities"
+          },
+          "description_verbatim": "Currently, you document the status of your LAFW and BSC daily by confirming that the LDC screen is on, that there is no active alarm, and that the velocity profile is within range. To support quality assurance practices and trends, starting immediately, document the actual velocity profile (in FPM) versus placing a checkmark indicating that it is in range. In addition, update the Non-Hazardous Hood Status template to include the required velocity range for the LAFW. Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            4
+          ]
+        },
+        {
+          "ordinal": 10,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Preparation Requirements : Sterility Tests",
+            "parent": "Sterile - Preparation Requirements",
+            "child": "Sterility Tests"
+          },
+          "description_verbatim": "As outlined in NAPRA 6.1.1, sterility tests must be performed for a given preparation or batch to support establishing a longer BUD. As noted, preparations must be quarantined while awaiting the results of sterility tests. Preparations may be released once the results of sterility testing are obtained. It was confirmed that sterility testing is completed for all preparations that have extended BUDs, but there may be situations, due to emergent needs, the sterile preparation is released prior to receiving sterility test results. It was explained that this practice is rare and can occur if the pharmacist deems that the risk of patient harm is greater if treatment is delayed due to awaiting sterility results. Sterility testing is only required if the BUD is extended beyond those as established within NAPRA Table 7, thus the concern of delaying treatment is not a risk if the BUD is not extended. To reaffirm our discussion, releasing a sterile preparation before sterility testing results are provided (i.e., risk release) must cease and be reflected in your policy and procedure manual.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 6.1.1",
+              "standard_code": "6.1.1",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            4
+          ]
+        },
+        {
+          "ordinal": 11,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Quality Assurance Program : Verification of Equipment & Facilities",
+            "parent": "Sterile - Quality Assurance Program",
+            "child": "Verification of Equipment & Facilities"
+          },
+          "description_verbatim": "Upon review of the Hazardous Room Temperature & Pressure Monitor Verification template from May 2024, half of the pharmacy’s operational dates had temperatures above 20°C in the anteroom and clean room, whereas the non-hazardous anteroom and cleanroom only had two dates above 20°C. When temperatures were above 20°C ‘action’ was taken and documented as ‘adjust’. As indicated within NAPRA 5.3.2.5, the temperature in controlled rooms must be less than or equal to 20°C. Within the next 30 days, explore the options to address this deficiency, which may include updates to the current HVAC system of your pharmacy and/or building. In addition, ensure proper documentation that outlines what actions were taken to address the elevated temperature (or the result of the intervention) and/or the possible reasons why the temperature was elevated. For example, there was a date in May when the temperatures were above 25 degrees which was associated to work being completed on the building’s HVAC system. Lastly, for the Hazardous and Non-Hazardous Room Temperature Log and Pressure Monitoring templates this is the statement ‘Action taken if above or below 20’. It is not clear what action would be required if the temperature was below 20, which is the required Standard. Please update this template accordingly.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 5.3.2.5",
+              "standard_code": "5.3.2.5",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            4,
+            5
+          ]
+        },
+        {
+          "ordinal": 12,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Personnel : Training & Assessment",
+            "parent": "Sterile - Personnel",
+            "child": "Training & Assessment"
+          },
+          "description_verbatim": "As per NAPRA 5.1.2.2, an initial training and assessment program for compounding personnel must have the following components: • reading and understanding the policies and procedures related to compounded hazardous sterile preparations (see Appendix 1); • theoretical training, with assessment covering various topics, including those listed in Appendix 3; • individualized practical training and assessment in the workplace clean room (see section 7 and Appendix 3); • assessment of aseptic techniques, based on gloved fingertip sampling (GFS) and a media fill test, for the various types of sterile preparations to be compounded. Upon review of your initial training and ongoing competency assessment programs, the following was noted to be absent: • How to complete and read the results GFS/media-fill tests. • How to complete surface sampling (i.e., sampling plan, standard operating procedures, etc.). • How to complete hazardous wipe sampling (i.e., sampling plan, standard operating procedures, etc.). • Differentiation of the training and assessment based on the practice environment (i.e., hazardous versus non-hazardous). • Establishment of a plan to rotate practical assessments between environmental conditions (i.e., hazardous versus non-hazardous). • Cleaning and disinfection protocols. • Confirmation of policy and procedure review, particularly with policy and practice changes. This update will support current practices and your exploration of expanding responsibilities of other sterile compounding staff (i.e., cross-training). Within the next 30 days, update your initial training and ongoing competency assessment programs (as noted above) and upload within the ShareFile.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 5.1.2.2",
+              "standard_code": "5.1.2.2",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            5
+          ]
+        },
+        {
+          "ordinal": 13,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Quality Assurance Program : Verification of Equipment & Facilities",
+            "parent": "Sterile - Quality Assurance Program",
+            "child": "Verification of Equipment & Facilities"
+          },
+          "description_verbatim": "As shared within the digital evidence and further discussed during our inspection, you were unable to find the most recent records of hazardous wipe sampling. The last record of reported wipe sampling was from November 2022. We were informed that wipe sampling of four different hazardous products was completed last week, and you are awaiting results. As indicated within NAPRA 7.3.2.3, wipe sampling should be measured at least every six months. Within the next 30 days, develop and implement a wipe sampling policy and procedure, inclusive to developing sampling plans that are associated to areas where likely to be contaminated, such as the outside of the BSC, the floor surrounding the BSC, and locations of hazardous drug storage and disposal. Sites sampled should be established on the basis of results obtained on previous monitoring. Please upload these documents in the ShareFile when completed.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 7.3.2.3",
+              "standard_code": "7.3.2.3",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            5,
+            6
+          ]
+        },
+        {
+          "ordinal": 14,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-07-17",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Facilities & Equipment : Cleaning, Calibrating, & Maintanence",
+            "parent": "Sterile - Facilities & Equipment",
+            "child": "Cleaning, Calibrating, & Maintanence"
+          },
+          "description_verbatim": "As per NAPRA standards, daily cleaning and disinfecting is required for the following surfaces and areas: • LAFW/BSC, • counters, • carts, • floors, and • surfaces that are touched frequently (e.g., doorknobs, switches, chairs). It is not clear based on your Hazardous and Non-Hazardous Disinfecting Chart template if the visual equipment within the LAFW/BSC is included in the daily clean. Immediately, update your cleaning procedures to include the visual equipment, and any other elements that are not clearly indicated within the disinfecting charts. Please upload this updated document within the ShareFile in the next 30 days. Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            6
+          ]
+        },
+        {
+          "ordinal": 15,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-08-08",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Personnel : Roles & Responsibilities",
+            "parent": "Sterile - Personnel",
+            "child": "Roles & Responsibilities"
+          },
+          "description_verbatim": "Technicians from Controlled Environment Technologies (CET) conducted environmental sampling and certification of your sterile hazardous and non-hazardous compounding rooms in February 2024. There were several deficiencies noted within the 2024 report that must be addressed/ confirmed by CET: • The final reports included the Air Changes Per Hour (ACPH) for the anteroom and clean room as well as the ACPH with “the hood running and clean room HEPAs running”. It is not clear whether CET assessed the ACPH with the HVAC system off or if there was confirmation on the ACPH that your LAFW and BSC contribute to the clean room as required by CETA Application Guide 8 (CAG-008). • The final reports included 10 air particle count samples (P1 to P10) in both the LAFW and BSC; however, the sampling plan only described five locations (i.e., P1 to P5). • The reports did not describe smoke pattering testing in the anteroom and clean room, including the description of the process used and the resulting airflow behaviour, as required by the by CETA application guidelines. • The reports did not include smoke pattern tests within the LAFW and BSC, which is required as per NAPRA Standard 5.3.3.1 and the CETA application guidelines. NAPRA 5.3.3.1, confirms that the compounding supervisor must ensure that the certification of the primary engineering control is completed accordingly to certification standards currently in force. This would also include the sterile controlled rooms. Prior to the next schedule certification by CET (planned for June 2024), review all applicable NAPRA standards and Appendices 5 and 6 which speak to minimum indicators for certification and the list of certifications required for your sterile compounding rooms.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 5.3.3.1",
+              "standard_code": "5.3.3.1",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            6,
+            7
+          ]
+        },
+        {
+          "ordinal": 16,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Facilities & Equipment : Cleaning, Calibrating, & Maintanence",
+            "parent": "Sterile - Facilities & Equipment",
+            "child": "Cleaning, Calibrating, & Maintanence"
+          },
+          "description_verbatim": "During the daily clean of the BSC, the upper body and head of pharmacy staff are entering the LAFW/BSC to support cleaning tasks. As discussed, consider introducing a cleaning tool/device (such as a clipper mop) to aid in cleaning activities and prevent the unnecessary introduction of cleaning staff appendages inside the LAFW/BSC. Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            7
+          ]
+        },
+        {
+          "ordinal": 17,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-07-17",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Personnel : Roles & Responsibilities",
+            "parent": "Sterile - Personnel",
+            "child": "Roles & Responsibilities"
+          },
+          "description_verbatim": "To support an appropriate quality assurance program and analysis of practice trends, within the next 30 days establish a running document (i.e., excel spreadsheet or similar), that provides a high- level summary of the results from previous CET certifications, GFS/media fill test results of staff members, particle counts/CFUs, microbial loads, etc. This document will support compliance to NAPRA Standard 7.6 to facilitate the investigation of missing documentation and deviations from protocols, identifying trends concerning microbial load, and developing corrective and preventative actions. Once developed, please upload into the ShareFile. Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            7
+          ]
+        },
+        {
+          "ordinal": 18,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-07-17",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Facilities & Equipment : Cleaning, Calibrating, & Maintanence",
+            "parent": "Sterile - Facilities & Equipment",
+            "child": "Cleaning, Calibrating, & Maintanence"
+          },
+          "description_verbatim": "As per Table 8 of the Hazardous NAPRA Standards, all surfaces inside the BSC and subfloor of the BSC should be decontaminated, deactivated, and disinfected weekly, at the end of a workday, or as recommended by the manufacturer. The current procedure has deactivation of the subfloor in the BSC completed monthly. Starting immediately, update your cleaning procedures to include the weekly decontamination, deactivation, and disinfection of the BSC subfloor. Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            7
+          ]
+        },
+        {
+          "ordinal": 19,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Preparation Requirements : PPE",
+            "parent": "Sterile - Preparation Requirements",
+            "child": "PPE"
+          },
+          "description_verbatim": "As observed, there is no practice in place for tracking the use of respirators as well as documentation indicating the date of manufacture and expiry date for respiratory cartridges. Within the next 30 days, reach out to the respirator cartridge manufacturer for recommendations on expiry dates once opened, proper storage conditions while not in use, and cleaning processes after use.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            8
+          ]
+        },
+        {
+          "ordinal": 20,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Facilities & Equipment : Surfaces",
+            "parent": "Sterile - Facilities & Equipment",
+            "child": "Surfaces"
+          },
+          "description_verbatim": "During the aseptic technique assessment, there appeared to be damaged/discoloured areas above the trim within the hazardous clean room. Please investigate these areas and complete any required repairs and cleaning activities within 30 days.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            8
+          ]
+        },
+        {
+          "ordinal": 21,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Facilities & Equipment : Clean Rooms",
+            "parent": "Sterile - Facilities & Equipment",
+            "child": "Clean Rooms"
+          },
+          "description_verbatim": "As per NAPRA 5.3.2.5, the clean room must be kept under negative pressure relative to the anteroom and must maintain a pressure of -2.5 Pa (i.e., the pressure differential between the anteroom and clean room must be at least 2.5 Pa to maintain unidirectional airflow from the anteroom to the clean room). As per the Hazardous Room temperature Log & Pressure Monitor verification template, it is not clear that the hazardous clean room is maintaining a negative pressure for the following reasons: - Documentation within the template has a column header of 'Pressure Monitor Range: Clean Room 15-60 PSI'. During our discussion it was not clear what this 'range' was referencing nor if the value that the monitor is providing is a negative pressure. - Room pressure should be measured using Pascals versus PSI. - Staff are only 'checking' off that the PSI value is within the 15-60 PSI range and not documenting the actual pressure recorded. Your staff are regularly monitoring the negative pressure of your pharmacy space (i.e., the lab) which is consistently below -2.5 Pascals (as required per the Standards for Pharmacy Compounding of Non-Sterile preparations). Within the next 30 days, explore options to replace your current sterile room pressure monitors to support appropriate monitoring, documentation, and quality assurance practices, similar to your monitoring practices of your non-sterile compounding lab. Please send an email confirming that the monitor has been updated. In addition, update the Hazardous and Non-Hazardous Room temperature Log & Pressure Monitor templates to include reference to the required pressure value as per NAPRA, in Pascals, and once the monitor is updated, ensure all staff are documenting the actual value measured in Pascals. Please upload the updated template into the ShareFile.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 5.3.2.5",
+              "standard_code": "5.3.2.5",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            8
+          ]
+        },
+        {
+          "ordinal": 22,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Preparation Requirements : Conduct of Personnel",
+            "parent": "Sterile - Preparation Requirements",
+            "child": "Conduct of Personnel"
+          },
+          "description_verbatim": "During the aseptic technique assessment, it was observed that the doffing of PPE (i.e., mask and bouffant) was completed on the clean side of the anteroom. Within the next 30 days, review and update your donning/doffing procedures to ensure the activity noted above occurs on the dirty side of the anteroom.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            9
+          ]
+        },
+        {
+          "ordinal": 23,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Quality Assurance Program : Verification of Equipment & Facilities",
+            "parent": "Sterile - Quality Assurance Program",
+            "child": "Verification of Equipment & Facilities"
+          },
+          "description_verbatim": "Your pharmacy currently utilizes several templates to support quality assurance practices. As noted, documentation within many of the templates do not include specific dates (i.e., only the month and year is documented). This can cause issues, particularly for those quality assurance measures that are required to be reviewed and documented monthly.. Starting immediately, ensure appropriate documentation of quality assurance measures that specifies the precise date (and time, where required) that an activity was performed. Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            9
+          ]
+        },
+        {
+          "ordinal": 24,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Facilities & Equipment : Cleaning, Calibrating, & Maintanence",
+            "parent": "Sterile - Facilities & Equipment",
+            "child": "Cleaning, Calibrating, & Maintanence"
+          },
+          "description_verbatim": "Based on your Hazardous and Non-Hazardous Disinfecting Chart templates, it is not clear what is required to be cleaned and disinfected monthly. Immediately, update your cleaning procedure to include more details on the surfaces and areas that require monthly cleaning and disinfecting. Please upload this updated document within the ShareFile in the next 30 days.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            9
+          ]
+        },
+        {
+          "ordinal": 25,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Preparation Requirements : Receipt, Transport and Delivery",
+            "parent": "Sterile - Preparation Requirements",
+            "child": "Receipt, Transport and Delivery"
+          },
+          "description_verbatim": "NAPRA Standard 6.9 outlines the responsibilities related to the transport and delivery of compounded sterile preparations. As discussed, within the next 30 days, update your policy and procedure to ensure consistency and maintenance of cold chain for refrigerated and frozen preparations. For example, we discussed the following options: • Develop a pictogram demonstrating the packing requirements (number of ice packs, etc.) for refrigerated and frozen preparations as a quality assurance measure and consistency among staff. • Complete local testing/control samples to confirm the number of ice packs and other packaging materials required to ensure cold chain with all deliveries.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            9
+          ]
+        },
+        {
+          "ordinal": 26,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Facilities & Equipment : Cleaning, Calibrating, & Maintanence",
+            "parent": "Sterile - Facilities & Equipment",
+            "child": "Cleaning, Calibrating, & Maintanence"
+          },
+          "description_verbatim": "NAPRA 5.3.4 speaks to the cleaning and disinfecting in areas reserved for compounding hazardous sterile preparations. During our visit, it was confirmed that bleach is used to support this practice, but it was determined that there is no policy and procedure and general maintenance log in use to support decontamination/deactivation activities for the BSC, premises and equipment, including the frequency and agents used. Immediately, develop a cleaning policy and procedure and general maintenance log to support decontamination/deactivate practices. Please upload these documents within the ShareFile in the next 30 days. Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 5.3.4",
+              "standard_code": "5.3.4",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            10
+          ]
+        },
+        {
+          "ordinal": 27,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Facilities & Equipment : Cleaning, Calibrating, & Maintanence",
+            "parent": "Sterile - Facilities & Equipment",
+            "child": "Cleaning, Calibrating, & Maintanence"
+          },
+          "description_verbatim": "During the aseptic technique assessment open bottles of cleaning agents were observed without documented beyond use dates post opening. In addition, it was not clear of the appropriate contact type (wet or dry) and contact time for the current sporicidal agent. As directed, contact the manufacturers of the disinfectant (Cavicide) and sporicidal (Accel Rescue) agents currently utilized to confirm appropriate beyond use dates after opening and contact time for desired effect.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            10
+          ]
+        },
+        {
+          "ordinal": 28,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-07-17",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Preparation Requirements : Sterility Tests",
+            "parent": "Sterile - Preparation Requirements",
+            "child": "Sterility Tests"
+          },
+          "description_verbatim": "We reviewed Master Formulation Records (MFR)/Compounding Protocols (CP) for sterile preparations that have BUDs beyond those listed in the NAPRA standards. It is not clear how the volumes required for sterility testing was established. For example, the MFR/CP for Leuprolide 5mg/mL (100mL vial) indicates drawing 5mLs of the final preparation to be used for sterility testing. As per USP <71> Table 2, volumes greater than 40mL, and not greater than 100mL, requires a minimum quantity of 20mLs for sterility testing (unless otherwise justified and authorized). This is similar for the Methylcobalamin 1mg/mL and 5mg/mL (100mL vials) and Prostaglandin 20ug/mL (100ml vial) MFR/CP. As noted, the volume required for sterility testing will differ based on the volume of the final preparation, particularly if the final volume differs from the original MFR/CP. Within the next 30 days, update all MFR/CP of sterile preparations that require sterility testing to include the volumes required for sterility testing as outlined in USP <71>. If the volume of 5mLs is ‘justified and authorized’ versus what is outlined in USP <71> provide documentation indicating as such.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            10
+          ]
+        },
+        {
+          "ordinal": 29,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Facilities & Equipment : Storage",
+            "parent": "Sterile - Facilities & Equipment",
+            "child": "Storage"
+          },
+          "description_verbatim": "As per NAPRA 6.8.2.1, the sterile compounding supervisor must develop a storage procedure, and this procedure must be followed at all times. Hazardous products must be stored separately from non-hazardous products and hazardous products must be stored in a well-ventilated room (12 ACPH) or in a dedicated biomedical refrigerator or freezer. During our visit there was no record of a storage procedure available, and it was confirmed that hazardous products are being stored with non-hazardous products within shelving and refrigerators. Within the next 30 days, develop and implement a policy and procedure that addresses the appropriate storage of hazardous products. Refer to NAPRA 5.3.2.5 and 6.8.2.1 and Appendix 9 for more information.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 6.8.2.1",
+              "standard_code": "6.8.2.1",
+              "document": "NAPRA"
+            },
+            {
+              "raw_text": "NAPRA 5.3.2.5",
+              "standard_code": "5.3.2.5",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            11
+          ]
+        },
+        {
+          "ordinal": 30,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Quality Assurance Program : Verification of Equipment & Facilities",
+            "parent": "Sterile - Quality Assurance Program",
+            "child": "Verification of Equipment & Facilities"
+          },
+          "description_verbatim": "Your pharmacy currently utilizes a template to support quality assurance measures related to the calibration and cleaning of an autoclave. It is not clear within this template when the autoclave was cleaned (after every 20 cycles) or calibrated, and how the number of cycles is tracked to support the cleaning plan. Within the next 30 days, update this template to provide more clarity on what is being tracked/completed.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            11
+          ]
+        },
+        {
+          "ordinal": 31,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Preparation Requirements : PPE",
+            "parent": "Sterile - Preparation Requirements",
+            "child": "PPE"
+          },
+          "description_verbatim": "As explained during the aseptic technique assessment, the current practice when cleaning the BSC is to lift the window and perform cleaning duties daily. Within the next 30 days, review and update your procedures to ensure that staff are wearing an appropriate chemical cartridge respirator with full face-piece or chemical cartridge respirator with face shield and goggles any time the BSC window is open. Refer to NAPRA 5.3.3.3 and Table 5 for more information. Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 5.3.3.3",
+              "standard_code": "5.3.3.3",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            11
+          ]
+        },
+        {
+          "ordinal": 32,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-07-17",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Preparation Requirements : PPE",
+            "parent": "Sterile - Preparation Requirements",
+            "child": "PPE"
+          },
+          "description_verbatim": "During the aseptic technique assessment, it was identified that not all sterile compounding staff are 'fit' tested for a respirator. Within the next 30 days, ensure all staff have been appropriately fit tested for a respirator to ensure appropriate PPE and safety precautions when deactivating, decontaminating, and cleaning underneath the work surface of the BSC, when cleaning up a spill, when there is risk of splashes to the face and eyes and when unpacking suspected damaged drugs.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            11
+          ]
+        },
+        {
+          "ordinal": 33,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Personnel : Roles & Responsibilities",
+            "parent": "Sterile - Personnel",
+            "child": "Roles & Responsibilities"
+          },
+          "description_verbatim": "In October 2023, there was a change of licensee at Strathcona Compounding Ltd. deeming all active/signed Compounding and Repackaging (C&R) Agreements associated with the previous Licensee no longer valid. As per Section 4.1(b) of the C&R Pharmacy Agreement: Community Pharmacies, all C&R agreements are automatically terminated when the pharmacy license held by the licensee expires, is suspended, is cancelled or is otherwise terminated. New C&R agreements are required to reflect the change in Licensee. Within the next 30 days, review all active C&R agreements that are associated to the previous Licensee and establish new agreements with you listed as the Licensee. Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            12
+          ]
+        },
+        {
+          "ordinal": 34,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Personnel : Roles & Responsibilities",
+            "parent": "Sterile - Personnel",
+            "child": "Roles & Responsibilities"
+          },
+          "description_verbatim": "Upon review of the GFS and media fill tests completed for Tina and Shana, there were several deficiencies noted: • No documentation of the 'time' that the GFS and media fill tests were collected and read. • Several instances of the 'date' that GFS and media fill test results were read not documented. • Instances of the Lot # and Expiry date of the media for GFS/media fill test not documented. • Instances of the 'Qualitative Assessment of Results' box for GFS/media fill testing left blank. • Instances of the third-party evaluator not documenting, signing, and dating completion of the compounding supervisor's theoretical and practical evaluation. • Confirmation of appropriate incubator temperature when in use for GFS/media fill tests. Starting immediately, review and update (where applicable) the templates utilized for GFS and media fill testing to ensure that all quality assurance and training/assessment practices are collected and documented appropriately. Within the next 30 days, please upload a completed GFS/media fill test within the ShareFile for a staff member that addresses this deficiency. Please also upload revisions to your policy and procedure that addresses this deficiency. Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            12
+          ]
+        },
+        {
+          "ordinal": 35,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile - Personnel : Roles & Responsibilities",
+            "parent": "Sterile - Personnel",
+            "child": "Roles & Responsibilities"
+          },
+          "description_verbatim": "As per NAPRA 7.4.1, GFS must be incubated between 30°C and 35°C and must be read within 48 to 72 hours. There were several instances of GFS results being read beyond the 48-to-72-hour window. We clarified that GFS media may not support the proliferation of bacteria beyond 72 hours, thus reinforcing the importance of evaluating results on time. As discussed, there are no other staff members that have been trained to perform and evaluate GFS results, which contributed to not fulfilling this standard. You indicated that the responsibilities of other sterile compounding staff members will expand to support compliance to this standard. Within the next 30 days, develop a policy and procedure that supports the practice of GFS and media fill tests and submit within the ShareFile.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 7.4.1",
+              "standard_code": "7.4.1",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            12,
+            13
+          ]
+        },
+        {
+          "ordinal": 36,
+          "identified_date": "2024-06-13",
+          "due_date": "2024-07-13",
+          "completed_date": "2024-06-29",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile - Preparation Requirements : Receipt, Transport and Delivery",
+            "parent": "Sterile - Preparation Requirements",
+            "child": "Receipt, Transport and Delivery"
+          },
+          "description_verbatim": "As per NAPRA 6.9, when a private carrier is used, the sterile compounding supervisor must verify the steps taken to ensure maintenance of the cold chain throughout transport and storage of hazardous compounded sterile preparations. The sterile compounding supervisor must also ensure that the private carrier knows the procedures to be followed in the event of a spill, that a spill kit is available and that transport personnel have received appropriate training. All personnel involved in transporting hazardous compounded sterile preparations must be trained in the procedures for such transport and for spills or accidental exposure Within the next 30 days, contact all private carriers utilized to confirm availability of spills kits and appropriate training of staff if an accidental spill of a hazardous product occurs.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [
+            {
+              "raw_text": "NAPRA 6.9",
+              "standard_code": "6.9",
+              "document": "NAPRA"
+            }
+          ],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "assessment_date": "2024-07-30",
+      "findings": [
+        {
+          "ordinal": 1,
+          "identified_date": "2024-07-30",
+          "due_date": "2024-08-29",
+          "completed_date": "2024-08-12",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile Compounding Follow-up : Sterile Compounding Follow- up",
+            "parent": "Sterile Compounding Follow-up",
+            "child": "Sterile Compounding Follow- up"
+          },
+          "description_verbatim": "At our last visit we determined that there was no record of an initial training and assessment program for staff involved in the cleaning and disinfecting of the LAFW, BSC, and clean rooms. Since that visit, you have developed a questionnaire that will assess the theoretical component of cleaning/disinfecting; however, there is no record on how you will assess the practical component. Within the next 30 days, develop a tool/template (reflective of your SOPs) which can be used to assess/confirm a staff member's practical abilities for the cleaning/disinfecting/deactivation/ decontamination of your sterile environment. In addition, apply both the theoretical and practical assessment tools with current staff and upload the results of at least one staff member into the ShareFile. Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            13
+          ]
+        },
+        {
+          "ordinal": 2,
+          "identified_date": "2024-07-30",
+          "due_date": "2024-08-29",
+          "completed_date": "2024-08-12",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile Compounding Follow-up : Sterile Compounding Follow- up",
+            "parent": "Sterile Compounding Follow-up",
+            "child": "Sterile Compounding Follow- up"
+          },
+          "description_verbatim": "At our last visit we documented the following regarding GFS and media-fill tests: • No documentation of the 'time' that the GFS and media fill tests were collected and read. • Several instances of the 'date' that GFS and media fill test results were read not documented. • Instances of the Lot # and Expiry date of the media for GFS/media fill test not documented. • Instances of the 'Qualitative Assessment of Results' box for GFS/media fill testing left blank. • Confirmation of appropriate incubator temperature when in use for GFS/media fill tests not completed. You informed me that you brought on a new staff member who is currently undergoing initial GFS and media-fill testing. Within the next 30 days, upload this staff member's initial GFS and media-fill test results into the ShareFile account for review to confirm this previous deficiency has been resolved. .",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            13,
+            14
+          ]
+        },
+        {
+          "ordinal": 3,
+          "identified_date": "2024-07-30",
+          "due_date": "2024-08-29",
+          "completed_date": "2024-08-08",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile Compounding Follow-up : Sterile Compounding Follow- up",
+            "parent": "Sterile Compounding Follow-up",
+            "child": "Sterile Compounding Follow- up"
+          },
+          "description_verbatim": "CET attended your sterile pharmacy environment in June 2024 to complete the biannual sampling and certification of your sterile hazardous and non-hazardous compounding rooms. CET will be returning shortly to complete further testing which was left outstanding from their last visit. For this reason, you are still awaiting the results from CET. Upon receipt of these results, please upload all associated documentation into the ShareFile folder. Date State Category Due Date Person Responsible Completed Date",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            14
+          ]
+        },
+        {
+          "ordinal": 4,
+          "identified_date": "2024-07-30",
+          "due_date": "2024-08-29",
+          "completed_date": "2024-08-12",
+          "state": "Closed",
+          "person_responsible": "Shana Morris",
+          "category": {
+            "raw": "Sterile Compounding Follow-up : Sterile Compounding Follow- up",
+            "parent": "Sterile Compounding Follow-up",
+            "child": "Sterile Compounding Follow- up"
+          },
+          "description_verbatim": "As discussed, within the next 30 days, please upload the following completed templates into the ShareFile. 1.) June and July Freezer temperature logs 2.) June and July Room Pressure logs for the Hazardous clean room 3.) June and July Temperature logs for the Non-hazardous and hazardous clean rooms and associated anterooms",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            14
+          ]
+        },
+        {
+          "ordinal": 5,
+          "identified_date": "2024-07-30",
+          "due_date": "2024-08-29",
+          "completed_date": "2024-08-08",
+          "state": "Closed",
+          "person_responsible": "William Leung",
+          "category": {
+            "raw": "Sterile Compounding Follow-up : Sterile Compounding Follow- up",
+            "parent": "Sterile Compounding Follow-up",
+            "child": "Sterile Compounding Follow- up"
+          },
+          "description_verbatim": "As you discovered prior to our visit in June, there is no recent record demonstrating that Hazardous Wipe Sampling was being completed every 6-months. After our visit, you completed your own Hazardous wipe sampling and are currently awaiting the results from a third party. You indicated that you will follow-up with this third party today to confirm results. Upon you receive the results, please upload all associated documents to the ShareFile.",
+          "description_summary": null,
+          "summary_bullets": null,
+          "referenced_standards": [],
+          "referenced_urls": [],
+          "source_page_numbers": [
+            14
+          ]
+        }
+      ]
+    }
+  ]
+}
