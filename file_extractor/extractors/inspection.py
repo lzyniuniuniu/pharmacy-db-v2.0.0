@@ -1,12 +1,18 @@
 """
-ACP Case Summary PDF Extractor
-================================
+ACP Inspection / Case Summary Extractor
+========================================
 
-Extracts structured data from Alberta College of Pharmacy case summary PDFs
-into a canonical JSON format suitable for loading into the inspection database.
+Parses Alberta College of Pharmacy case summary PDFs into the canonical
+JSON shape consumed by the pharmacy-db loader.
 
-USAGE:
-    python extract_case_summary.py <path-to-pdf> [--output <path-to-json>] [--pretty]
+This module contains all the domain knowledge: schema, parsing, validation.
+It exposes:
+
+- `InspectionExtractor`: the plugin class registered with the dispatcher.
+- `extract(pdf_path)`: a thin function form of the same logic, kept so
+  the existing `test_extraction.py` batch script keeps working.
+
+The CLI lives in `extract.py` at the project root.
 
 DESIGN NOTES:
 - Uses pdfplumber's word-level positional data (x/y coordinates) rather than
@@ -20,27 +26,21 @@ DESIGN NOTES:
 - Verbatim text is preserved exactly. Any summarization is a separate phase.
 - Findings are extracted document-wide (not page-by-page) so descriptions
   that span page boundaries are captured intact.
-
-DEPENDENCIES: pdfplumber (only).
 """
 from __future__ import annotations
 
-import argparse
 import hashlib
-import json
 import logging
 import re
-import sys
-import time
-from dataclasses import dataclass, field, asdict
+from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import TYPE_CHECKING, Any
+from typing import Any
 
 import pdfplumber
+from pdfplumber.pdf import PDF as PdfPlumberPDF
 
-if TYPE_CHECKING:
-    from pdfplumber.pdf import PDF as PdfPlumberPDF
+from extractors.base import Extractor
 
 # =========================================================================
 # CONSTANTS
@@ -206,7 +206,7 @@ class ExtractedCaseSummary:
 # UTILITIES
 # =========================================================================
 
-log = logging.getLogger("extractor")
+log = logging.getLogger("extractor.inspection")
 
 
 def sha256_file(path: Path) -> str:
@@ -352,8 +352,6 @@ def _line_is_description(line_words: list[dict]) -> bool:
     sorted_words = sorted(line_words, key=lambda w: w["x0"])
 
     if len(sorted_words) < 2:
-        # Single word: a date wrap "2025" or a one-word heading.
-        # Treat as not-description (column wrap).
         return False
 
     max_gap = 0.0
@@ -363,19 +361,13 @@ def _line_is_description(line_words: list[dict]) -> bool:
             max_gap = gap
 
     if max_gap < 20:
-        # Looks like prose. Guard against very short lines that might
-        # just be a column wrap with tight spacing.
         return len(sorted_words) >= 4
 
     return False
 
 
 def _is_decoration_word(w: dict) -> bool:
-    """Identify words that are page decoration (headers, footers).
-
-    Page header strip: very top (y < 35) — "Page N of M Case Summary #..."
-    Page footer strip: bottom ~60pt — "Report created on: ..."
-    """
+    """Identify words that are page decoration (headers, footers)."""
     page_height = w["page_height"]
     y = w["top"]
     if y < 35:
@@ -391,8 +383,6 @@ def collect_all_words(pdf: PdfPlumberPDF) -> list[dict]:
 
     The global y is `page_index * 10000 + page_y`, which preserves order
     across pages without overlap (page heights are <800 in points).
-
-    Returns a list sorted by global_y.
     """
     out: list[dict] = []
     for page_idx, page in enumerate(pdf.pages):
@@ -409,10 +399,7 @@ def collect_all_words(pdf: PdfPlumberPDF) -> list[dict]:
 
 
 def find_header_rows_global(all_words: list[dict]) -> list[dict]:
-    """Find every finding-block header row across the whole document.
-
-    Returns a list of dicts: {global_y, page_number, page_y, page_index}.
-    """
+    """Find every finding-block header row across the whole document."""
     lines: dict[tuple[int, float], list[dict]] = {}
     for w in all_words:
         key = (w["page_index"], round(w["top"] / 2) * 2)
@@ -438,19 +425,13 @@ def _extract_finding_block(
     next_header_global_y: float,
     header_page_index: int,
 ) -> dict:
-    """Extract one finding block: column values and description text.
-
-    Operates over global y-coordinates so descriptions can span page
-    boundaries. Skips footer/header decoration words.
-    """
-    # All words in this finding's vertical band
+    """Extract one finding block: column values and description text."""
     band_words = [
         w for w in all_words
         if header_global_y + 6 < w["global_y"] < next_header_global_y
     ]
     band_words = [w for w in band_words if not _is_decoration_word(w)]
 
-    # Group into "global lines" — same page AND similar y
     lines: dict[tuple[int, float], list[dict]] = {}
     for w in band_words:
         key = (w["page_index"], round(w["top"] / 2) * 2)
@@ -474,13 +455,11 @@ def _extract_finding_block(
                 if line_words[0]["page_number"] not in page_numbers:
                     page_numbers.append(line_words[0]["page_number"])
             else:
-                # Column-zone line — assign words to columns
                 for w in line_words:
                     col = _classify_column(w["x0"])
                     if col:
                         column_values[col].append(w["text"])
         else:
-            # Already in description; everything after is description text
             description_lines.append(" ".join(w["text"] for w in line_words))
             if line_words[0]["page_number"] not in page_numbers:
                 page_numbers.append(line_words[0]["page_number"])
@@ -499,12 +478,7 @@ def _extract_finding_block(
 
 
 def extract_findings_global(pdf: PdfPlumberPDF) -> list[dict]:
-    """Extract all findings document-wide, allowing descriptions to span pages.
-
-    Returns a list of raw finding dicts with keys:
-        date, state, category, due_date, person_responsible, completed_date,
-        description, page_numbers (list).
-    """
+    """Extract all findings document-wide, allowing descriptions to span pages."""
     all_words = collect_all_words(pdf)
     headers = find_header_rows_global(all_words)
 
@@ -525,19 +499,12 @@ def extract_findings_global(pdf: PdfPlumberPDF) -> list[dict]:
 # =========================================================================
 
 def extract_case_metadata(pdf: PdfPlumberPDF) -> dict[str, Any]:
-    """Extract case metadata (pharmacy, licensee, consultant, case #, etc.)
-    from page 1.
-
-    Tolerates missing fields: if the labeled metadata block is absent,
-    returns None for those fields. Case number is recovered from the page
-    header strip and footer as fallbacks.
-    """
+    """Extract case metadata from page 1. Tolerates missing fields."""
     if len(pdf.pages) == 0:
         return {}
 
     page1 = pdf.pages[0]
 
-    # The labeled metadata block is in the upper half of page 1
     top_text = page1.crop(
         (0, 0, page1.width, page1.height * 0.55)
     ).extract_text() or ""
@@ -576,16 +543,12 @@ def extract_case_metadata(pdf: PdfPlumberPDF) -> dict[str, Any]:
         if m.group(1).strip():
             result["case_closed_date"] = parse_date(m.group(1))
 
-    # Report generation timestamp from page footer
     footer_text = page1.crop(
         (0, page1.height * 0.94, page1.width, page1.height)
     ).extract_text() or ""
     if (m := CASE_META_PATTERNS["report_generated"].search(footer_text)):
         result["report_generated_at"] = parse_datetime(m.group(1))
 
-    # Fallback: case_number from the page-1 header strip or footer.
-    # Some PDFs omit the metadata block entirely but always have the
-    # "Page N of M Case Summary # XXX - Type" line.
     if not result["case_number"]:
         header_strip = page1.crop(
             (0, 0, page1.width, page1.height * 0.05)
@@ -607,12 +570,7 @@ def extract_case_metadata(pdf: PdfPlumberPDF) -> dict[str, Any]:
 def group_findings_into_assessments(
     raw_findings: list[dict],
 ) -> list[Assessment]:
-    """Group findings by their identified_date into Assessment objects.
-
-    Findings sharing the same date belong to the same assessment (visit).
-    Assessments are ordered chronologically; findings with unparseable
-    dates land in a final "unknown" assessment for human review.
-    """
+    """Group findings by their identified_date into Assessment objects."""
     by_date: dict[str, list[dict]] = {}
     seen_dates: list[str] = []
     for f in raw_findings:
@@ -623,7 +581,6 @@ def group_findings_into_assessments(
             by_date[key] = []
         by_date[key].append(f)
 
-    # Sort: known dates chronologically, unknown last
     known = sorted([d for d in seen_dates if d != "__unknown__"])
     if "__unknown__" in seen_dates:
         known.append("__unknown__")
@@ -661,17 +618,10 @@ def group_findings_into_assessments(
 # =========================================================================
 
 def validate(extracted: ExtractedCaseSummary) -> tuple[str, list[str], list[str]]:
-    """Validate extraction output.
-
-    Returns (status, warnings, errors):
-    - errors (blocking) → status = 'failed'
-    - warnings only → status = 'passed_with_warnings'
-    - clean → status = 'passed'
-    """
+    """Validate extraction output."""
     errors: list[str] = []
     warnings: list[str] = []
 
-    # Hard requirements
     if not extracted.case.case_number:
         errors.append("case_number is missing (not found in header or footer)")
 
@@ -679,7 +629,6 @@ def validate(extracted: ExtractedCaseSummary) -> tuple[str, list[str], list[str]
     if total_findings == 0:
         errors.append("no findings were extracted from the document")
 
-    # Soft warnings — missing identifying metadata
     if not extracted.pharmacy.name:
         warnings.append("pharmacy name missing — will require supervisor assignment")
     if not extracted.pharmacy.license_number:
@@ -689,7 +638,6 @@ def validate(extracted: ExtractedCaseSummary) -> tuple[str, list[str], list[str]
     if not extracted.case.consultant.name:
         warnings.append("consultant name missing — will require supervisor assignment")
 
-    # Findings-level checks
     for a in extracted.assessments:
         for f in a.findings:
             label = f"assessment {a.ordinal}, finding {f.ordinal}"
@@ -708,11 +656,11 @@ def validate(extracted: ExtractedCaseSummary) -> tuple[str, list[str], list[str]
 
 
 # =========================================================================
-# TOP-LEVEL ENTRY POINT
+# TOP-LEVEL FUNCTION (kept for backwards compatibility with batch script)
 # =========================================================================
 
-def extract(pdf_path: Path) -> ExtractedCaseSummary:
-    """Main entry point: parse a PDF into an ExtractedCaseSummary."""
+def extract_case_summary(pdf_path: Path) -> ExtractedCaseSummary:
+    """Parse an ACP case-summary PDF into an `ExtractedCaseSummary`."""
     log.info("Opening %s", pdf_path)
 
     file_hash = sha256_file(pdf_path)
@@ -788,61 +736,53 @@ def extract(pdf_path: Path) -> ExtractedCaseSummary:
     return extracted
 
 
-def to_json_dict(extracted: ExtractedCaseSummary) -> dict[str, Any]:
-    """Convert the extraction to a plain dict (recursively handles dataclasses)."""
-    return asdict(extracted)
+# Backwards-compatibility alias for the older `extract` name still used
+# by test_extraction.py and generate_extraction_pdfs.py.
+extract = extract_case_summary
 
 
 # =========================================================================
-# CLI
+# PLUGIN CLASS — what the dispatcher in extract.py uses
 # =========================================================================
 
-def main():
-    parser = argparse.ArgumentParser(
-        description="Extract ACP case summary PDF to canonical JSON",
-    )
-    parser.add_argument("pdf", type=Path, help="Path to PDF file")
-    parser.add_argument("--output", type=Path, help="Output JSON path (default: stdout)")
-    parser.add_argument("--pretty", action="store_true", help="Pretty-print JSON output")
-    parser.add_argument("--verbose", action="store_true", help="Verbose logging")
-    parser.add_argument(
-        "--record",
-        action="store_true",
-        help="Also write a PDF extraction record into ./extraction_records/",
-    )
-    args = parser.parse_args()
+class InspectionExtractor(Extractor):
+    """Extracts ACP case summary PDFs (regulatory inspection reports)."""
 
-    logging.basicConfig(
-        level=logging.DEBUG if args.verbose else logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-    )
+    DOCUMENT_TYPE = "case_summary"
 
-    if not args.pdf.exists():
-        print(f"Error: {args.pdf} not found", file=sys.stderr)
-        sys.exit(1)
+    # Markers that distinguish ACP case summaries from other documents.
+    # Look for these in the first two pages.
+    DETECTION_MARKERS = [
+        "CASE SUMMARY",
+        "Case Summary #",
+        "Pharmacy Practice Consultant",
+        "abpharmacy.ca",
+    ]
 
-    t0 = time.perf_counter()
-    extracted = extract(args.pdf)
-    elapsed = time.perf_counter() - t0
-    result = to_json_dict(extracted)
+    # How many of the markers must be found to claim a match.
+    # Tuned by hand: 2 of 4 is robust against single missing markers
+    # without false-positive matches against unrelated documents.
+    MIN_MARKERS_REQUIRED = 2
 
-    text = json.dumps(result, indent=2 if args.pretty else None, ensure_ascii=False)
+    def can_handle(self, pdf: PdfPlumberPDF) -> bool:
+        """Recognize ACP case summary PDFs by characteristic content."""
+        if len(pdf.pages) == 0:
+            return False
 
-    if args.output:
-        args.output.write_text(text, encoding="utf-8")
-        print(f"Wrote {args.output}", file=sys.stderr)
-    else:
-        print(text)
+        # Inspect first two pages — usually all distinguishing markers
+        # appear in the header / preamble area.
+        pages_to_check = pdf.pages[: min(2, len(pdf.pages))]
+        text = "\n".join((p.extract_text() or "") for p in pages_to_check)
 
-    if args.record:
-        from generate_extraction_pdfs import write_extraction_report
-        record_path = write_extraction_report(
-            extracted, source_pdf=args.pdf, elapsed_seconds=elapsed,
-        )
-        print(f"Wrote extraction record: {record_path}", file=sys.stderr)
+        match_count = sum(1 for m in self.DETECTION_MARKERS if m in text)
+        return match_count >= self.MIN_MARKERS_REQUIRED
 
-    sys.exit(0 if extracted.extraction_metadata.validation_status != "failed" else 2)
-
-
-if __name__ == "__main__":
-    main()
+    def extract(self, pdf_path: Path) -> dict[str, Any]:
+        """Run extraction and return canonical JSON dict."""
+        result = extract_case_summary(pdf_path)
+        output = asdict(result)
+        # Tag the output with the document type so downstream loaders
+        # can route to the right ingestion logic without re-inspecting
+        # the file or guessing from the schema shape.
+        output["document_type"] = self.DOCUMENT_TYPE
+        return output

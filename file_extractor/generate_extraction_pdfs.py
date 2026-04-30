@@ -46,7 +46,7 @@ from reportlab.platypus import (
 )
 
 if TYPE_CHECKING:
-    from extract_case_summary import ExtractedCaseSummary
+    from extractors.inspection import ExtractedCaseSummary
 
 
 DEFAULT_OUTPUT_DIR = Path("extraction_records")
@@ -172,7 +172,7 @@ def _cli() -> None:
 
     # Imported here so this module can also be imported without triggering
     # the (heavier) extractor import chain.
-    from extract_case_summary import extract
+    from extractors.inspection import extract
 
     t0 = time.perf_counter()
     extracted = extract(args.pdf)

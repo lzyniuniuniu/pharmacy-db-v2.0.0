@@ -1,4 +1,6 @@
+import argparse
 import json
+import sys
 import time
 from dataclasses import asdict
 from datetime import datetime
@@ -10,10 +12,35 @@ from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.units import inch
 from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
-from extract_case_summary import extract
+from extractors.inspection import extract
 
 
-folder = Path("/Users/marklu/Desktop/Algo-Pharm_formal/raw_data/Mint_Action_Reports")
+DEFAULT_FOLDER = Path(
+    "/Users/marklu/Desktop/Algo-Pharm_formal/raw_data/Mint_Action_Reports"
+)
+
+parser = argparse.ArgumentParser(
+    description="Batch-extract every PDF in a folder and write a summary report.",
+)
+parser.add_argument(
+    "folder",
+    nargs="?",
+    type=Path,
+    default=DEFAULT_FOLDER,
+    help=f"Folder containing PDFs to extract (default: {DEFAULT_FOLDER})",
+)
+args = parser.parse_args()
+
+folder: Path = args.folder
+if not folder.is_dir():
+    print(f"Error: folder not found: {folder}", file=sys.stderr)
+    sys.exit(1)
+
+pdfs = sorted(folder.glob("*.pdf"))
+if not pdfs:
+    print(f"Error: no PDFs found in {folder}", file=sys.stderr)
+    sys.exit(1)
+
 records_dir = Path("extraction_records")
 records_dir.mkdir(parents=True, exist_ok=True)
 
@@ -25,7 +52,7 @@ status_counts: dict[str, int] = {}
 failures: list[tuple[str, str]] = []
 
 batch_t0 = time.perf_counter()
-for pdf in sorted(folder.glob("*.pdf")):
+for pdf in pdfs:
     try:
         t0 = time.perf_counter()
         res = extract(pdf)
@@ -98,11 +125,11 @@ totals.setStyle(TableStyle([
 story += [totals, Spacer(1, 0.3 * inch)]
 
 story.append(Paragraph("Per-file results", styles["Heading2"]))
-header = ["#", "File", "Case", "Inspector", "Findings", "Status", "Time (s)"]
+header: list[str | Paragraph] = ["#", "File", "Case", "Inspector", "Findings", "Status", "Time (s)"]
 cell_style = styles["BodyText"]
 cell_style.fontSize = 9
 cell_style.leading = 11
-data = [header]
+data: list[list[str | Paragraph]] = [header]
 for i, r in enumerate(summary_rows, 1):
     data.append([
         str(i),

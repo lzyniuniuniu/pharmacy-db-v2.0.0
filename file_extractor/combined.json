@@ -2,7 +2,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:30.063370+00:00",
+      "extracted_at": "2026-04-30T11:53:41.193802+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "passed",
       "validation_warnings": [],
@@ -666,7 +666,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:31.321291+00:00",
+      "extracted_at": "2026-04-30T11:53:42.405377+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "passed",
       "validation_warnings": [],
@@ -1701,7 +1701,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:32.157753+00:00",
+      "extracted_at": "2026-04-30T11:53:43.247302+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "passed",
       "validation_warnings": [],
@@ -2618,7 +2618,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:32.874490+00:00",
+      "extracted_at": "2026-04-30T11:53:43.982496+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "passed",
       "validation_warnings": [],
@@ -3135,7 +3135,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:33.658223+00:00",
+      "extracted_at": "2026-04-30T11:53:44.756216+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "passed",
       "validation_warnings": [],
@@ -3657,7 +3657,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:33.721694+00:00",
+      "extracted_at": "2026-04-30T11:53:44.821337+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -3706,7 +3706,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:34.087326+00:00",
+      "extracted_at": "2026-04-30T11:53:45.185271+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "passed_with_warnings",
       "validation_warnings": [
@@ -4002,7 +4002,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:34.706956+00:00",
+      "extracted_at": "2026-04-30T11:53:45.802718+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "passed_with_warnings",
       "validation_warnings": [
@@ -4534,7 +4534,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:34.764629+00:00",
+      "extracted_at": "2026-04-30T11:53:45.862929+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "passed_with_warnings",
       "validation_warnings": [
@@ -4649,7 +4649,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:35.425667+00:00",
+      "extracted_at": "2026-04-30T11:53:46.527490+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "passed_with_warnings",
       "validation_warnings": [
@@ -5276,7 +5276,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:35.700295+00:00",
+      "extracted_at": "2026-04-30T11:53:46.804406+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "passed_with_warnings",
       "validation_warnings": [
@@ -5582,7 +5582,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:35.828274+00:00",
+      "extracted_at": "2026-04-30T11:53:46.935330+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -5631,7 +5631,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:35.845919+00:00",
+      "extracted_at": "2026-04-30T11:53:46.954020+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -5680,7 +5680,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:36.356337+00:00",
+      "extracted_at": "2026-04-30T11:53:47.469953+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "passed",
       "validation_warnings": [],
@@ -6134,7 +6134,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:36.426549+00:00",
+      "extracted_at": "2026-04-30T11:53:47.537892+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -6183,7 +6183,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:36.974352+00:00",
+      "extracted_at": "2026-04-30T11:53:48.086960+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "passed",
       "validation_warnings": [],
@@ -6717,7 +6717,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:37.040027+00:00",
+      "extracted_at": "2026-04-30T11:53:48.158776+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -6766,7 +6766,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:37.087909+00:00",
+      "extracted_at": "2026-04-30T11:53:48.207575+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -6815,7 +6815,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:37.242475+00:00",
+      "extracted_at": "2026-04-30T11:53:48.361196+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -6864,7 +6864,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:37.345655+00:00",
+      "extracted_at": "2026-04-30T11:53:48.467268+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -6913,7 +6913,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:37.379227+00:00",
+      "extracted_at": "2026-04-30T11:53:48.501705+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -6962,7 +6962,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:37.443605+00:00",
+      "extracted_at": "2026-04-30T11:53:48.569787+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -7011,7 +7011,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:37.879442+00:00",
+      "extracted_at": "2026-04-30T11:53:49.010611+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "passed_with_warnings",
       "validation_warnings": [
@@ -7320,7 +7320,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:38.144389+00:00",
+      "extracted_at": "2026-04-30T11:53:49.276678+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "passed_with_warnings",
       "validation_warnings": [
@@ -7597,7 +7597,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:38.236395+00:00",
+      "extracted_at": "2026-04-30T11:53:49.370238+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -7646,7 +7646,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:38.461825+00:00",
+      "extracted_at": "2026-04-30T11:53:49.596507+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "passed",
       "validation_warnings": [],
@@ -7832,7 +7832,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:38.626123+00:00",
+      "extracted_at": "2026-04-30T11:53:49.754468+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -7881,7 +7881,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:38.684956+00:00",
+      "extracted_at": "2026-04-30T11:53:49.811689+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -7930,7 +7930,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:38.722030+00:00",
+      "extracted_at": "2026-04-30T11:53:49.847209+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -7979,7 +7979,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:38.771206+00:00",
+      "extracted_at": "2026-04-30T11:53:49.893621+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -8028,7 +8028,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:38.795357+00:00",
+      "extracted_at": "2026-04-30T11:53:49.917502+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -8077,7 +8077,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:38.976985+00:00",
+      "extracted_at": "2026-04-30T11:53:50.091133+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -8126,7 +8126,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:39.075060+00:00",
+      "extracted_at": "2026-04-30T11:53:50.182487+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -8175,7 +8175,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:39.108517+00:00",
+      "extracted_at": "2026-04-30T11:53:50.216974+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -8224,7 +8224,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:39.156369+00:00",
+      "extracted_at": "2026-04-30T11:53:50.258125+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "failed",
       "validation_warnings": [
@@ -8273,7 +8273,7 @@
   {
     "extraction_metadata": {
       "extractor_version": "0.1.0",
-      "extracted_at": "2026-04-26T11:09:39.238098+00:00",
+      "extracted_at": "2026-04-30T11:53:50.339396+00:00",
       "extraction_method": "pdfplumber_columnar",
       "validation_status": "passed_with_warnings",
       "validation_warnings": [
