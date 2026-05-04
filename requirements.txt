@@ -1,0 +1,20 @@
+# ── pharmacy-db ──────────────────────────────────────────────
+fastapi==0.128.0
+uvicorn[standard]==0.40.0
+sqlalchemy==2.0.46
+psycopg[binary]>=3.2
+alembic>=1.13
+pydantic==2.12.3
+pydantic-settings==2.12.0
+
+# ── file_extractor ────────────────────────────────────────────
+pdfplumber==0.11.9
+pdfminer.six==20251230
+reportlab==4.4.10
+pillow==12.2.0
+pypdfium2==5.7.1
+
+# ── dev / test ────────────────────────────────────────────────
+pytest>=8.0
+httpx==0.28.1
+ruff>=0.5
