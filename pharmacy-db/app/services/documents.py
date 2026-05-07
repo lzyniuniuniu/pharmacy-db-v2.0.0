@@ -12,7 +12,7 @@ def get_or_create_document(
     *,
     file_hash: str,
     file_name: str,
-    document_type: str = "case_summary",
+    document_type: str,
     file_path: str | None = None,
     file_size_bytes: int | None = None,
     mime_type: str | None = None,

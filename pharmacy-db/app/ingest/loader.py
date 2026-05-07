@@ -113,6 +113,7 @@ def load_extraction_dict(data: dict[str, Any], db: Session) -> Case:
         db,
         file_hash=source_doc_data["file_hash"],
         file_name=source_doc_data["file_name"],
+        document_type=data.get("document_type", "case_summary"),
         file_size_bytes=source_doc_data.get("file_size_bytes"),
         mime_type=source_doc_data.get("mime_type"),
         page_count=source_doc_data.get("page_count"),
